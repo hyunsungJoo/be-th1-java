@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="day01_dataType"/>
 	<classpathentry kind="src" path="day02_operator"/>
 	<classpathentry kind="src" path="day03_control"/>
+	<classpathentry kind="src" path="quiz"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

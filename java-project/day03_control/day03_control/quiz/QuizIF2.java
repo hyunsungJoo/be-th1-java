@@ -22,7 +22,6 @@ public class QuizIF2 {
 		else {
 			System.out.println("윤년이 아닙니다.");
 			
-			
 		}
 	}
 }
