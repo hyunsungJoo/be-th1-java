@@ -10,5 +10,8 @@
 	<classpathentry kind="src" path="day02_operator"/>
 	<classpathentry kind="src" path="day03_control"/>
 	<classpathentry kind="src" path="quiz"/>
+	<classpathentry kind="src" path="day04_control"/>
+	<classpathentry kind="src" path="day04_homework"/>
+	<classpathentry kind="src" path="algorithm_hw"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

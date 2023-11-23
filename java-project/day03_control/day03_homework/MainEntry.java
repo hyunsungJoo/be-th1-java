@@ -27,7 +27,7 @@ public class MainEntry {
 			else if(op == '-') result = num1-num2;
 			else if(op == '*') result = num1*num2;
 			else if(op == '/') result = num1/num2;
-			System.out.println(result);
+			System.out.println(num1 + " " + op + " " + num2 + " = "  + result);
 			
 		} catch (Exception e) {
 			System.out.println("잘못 입력하였습니다.");

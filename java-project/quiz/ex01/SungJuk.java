@@ -7,24 +7,23 @@ public class SungJuk {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
+		int kor, eng, com;
+		String name = null;
+		name = sc.next();
+		
+		do {
 		System.out.println("국어 점수를 입력하세요 : ");
-		int kor = sc.nextInt();
+		kor = sc.nextInt();
 		System.out.println("영어 점수를 입력하세요 : ");
-		int eng = sc.nextInt();
+		eng = sc.nextInt();
 		System.out.println("전산 점수를 입력하세요 : ");
-		int com = sc.nextInt();
+		com = sc.nextInt();
+		}while(kor < 0 || kor > 100 || eng < 0 || eng > 100 || com < 0 || com > 100);
+		
 		
 		int total = kor + eng + com;
 		double avg = total / 3.0;
 		char grade;
-		
-//		switch((int)avg/10) { //switch(total / 30) {
-//		case 10 : 
-//		case 9 : grade = 'A'; break;
-//		case 8 : grade = 'B'; break;
-//		case 7 : grade = 'C'; break;
-//		case 6 : grade = 'D'; break;
-//		default : grade = 'F';
 		
 		if(avg >= 90) {
 			grade = 'A';
@@ -38,7 +37,7 @@ public class SungJuk {
 			grade = 'F';
 		}
 		
-		System.out.println("주현성님의 성적표 *****");
+		System.out.println(name + "님의 성적표 *****");
 		System.out.println("국어 : " + kor + " 영어 : " + eng + " 전산 : " + com);
 		System.out.println("총점 : " + total + " 평균 : " + avg + " 학점 : " + grade);
 		}		
