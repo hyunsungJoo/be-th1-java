@@ -14,5 +14,7 @@
 	<classpathentry kind="src" path="day04_homework"/>
 	<classpathentry kind="src" path="algorithm_hw"/>
 	<classpathentry kind="src" path="day05_array"/>
+	<classpathentry kind="src" path="day06_array"/>
+	<classpathentry kind="src" path="day_06.method"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
