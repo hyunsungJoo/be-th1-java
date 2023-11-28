@@ -16,5 +16,8 @@
 	<classpathentry kind="src" path="day05_array"/>
 	<classpathentry kind="src" path="day06_array"/>
 	<classpathentry kind="src" path="day_06.method"/>
+	<classpathentry kind="src" path="day07_arrayMethod"/>
+	<classpathentry kind="src" path="day07_staticMethod"/>
+	<classpathentry kind="src" path="day07_oop"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
