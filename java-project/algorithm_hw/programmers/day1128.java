@@ -1,6 +1,6 @@
 package programmers;
 
-class Solution {
+class Solution1128 {
     public int solution(int[][] board, int k) {
         int answer = 0;
         for(int i = 0; i < board.length; i++){
@@ -17,9 +17,8 @@ public class day1128 {
 		int [][] a = {{0, 1, 2},{1, 2, 3},{2, 3, 4},{3, 4, 5}};
 		int k = 2;
 		
-		Solution s = new Solution();
+		Solution1128 s = new Solution1128();
 	
 		System.out.println(s.solution(a,2));
 	}
-
 }

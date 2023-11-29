@@ -7,12 +7,14 @@ public class MainEntry {
 		pt.setX(100);
 		pt.setY(100);
 		pt.display();
+		System.out.println(pt);
 		
 		Circle c = new Circle();
 		c.setX(3);
 		c.setY(3);
 		c.setR(3);
 		c.display();
+		System.out.println(c);
 		
 	}
 }

@@ -29,9 +29,21 @@ public class Point {
 		return y;
 	}
 	
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + "]";
+	}
+
 	public void display() {
 		System.out.println(x + ", " + y);
 	}
+	
+//	@Override
+//	public String toString() {
+//		return x + ", " + y;
+//	}
+	
+	
 	
 
 }

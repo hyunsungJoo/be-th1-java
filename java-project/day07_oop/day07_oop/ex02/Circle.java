@@ -31,4 +31,9 @@ public class Circle {
 		System.out.println("x좌표 : " + x + " y좌표 : " + y + " 반지름 : " + r);
 //		System.out.println("x좌표 : " + getX() + " y좌표 : " + getY() + " 반지름 : " +getR());
 	}
+
+	@Override
+	public String toString() {
+		return "Circle [x=" + x + ", y=" + y + ", r=" + r + "]";
+	}
 }
