@@ -18,7 +18,7 @@ class Customers {
 		this.tel = tel;
 	}
 	
-	public void add() {
+	public Customers add() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("이름을 입력하세요 : ");
 		this.name = sc.next();
@@ -26,6 +26,7 @@ class Customers {
 		this.address = sc.next();
 		System.out.print("전화번호를 입력하세요 : ");
 		this.tel = sc.next();
+		return this;
 	}
 	
 	public int delete() {

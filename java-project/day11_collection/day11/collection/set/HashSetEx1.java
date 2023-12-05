@@ -48,6 +48,5 @@ public class HashSetEx1 {
 		while(it.hasNext()) { // 다음요소가 있다면
 			System.out.println(it.next()); // 요소를 꺼내와서 출력
 		}
-		
 	}
 }
