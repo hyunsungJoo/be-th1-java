@@ -27,7 +27,6 @@ public class HashMapEx4 {
 			int value = (Integer)entry.getValue();
 			System.out.println(entry.getKey() + " : " + printBar('#', value) + " " + value);
 		}
-	
 	} // end main
 
 	public static Object printBar(char ch, int value) {

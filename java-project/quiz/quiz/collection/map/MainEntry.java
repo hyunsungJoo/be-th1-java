@@ -23,14 +23,14 @@ public class MainEntry {
 					v.delete(map); break;
 				}
 				catch(Exception e) {
-					System.out.println("삭제할 비디오의 번호가 없습니다.");
+					System.out.println("삭제할 비디오의 번호를 입력해주세요.");
 				}
 			case 3 :
 				try {
 				v.edit(map); break;
 				}
 				catch(Exception e) {
-					System.out.println("수정할 비디오의 번호가 없습니다.");
+					System.out.println("수정할 비디오의 번호를 입력해주세요.");
 				}
 			case 4 : break;
 			}
@@ -38,6 +38,5 @@ public class MainEntry {
 			v.print(map);
 			System.out.println();
 		}
-		
 	}
 }

@@ -9,9 +9,10 @@ import java.util.Set;
 public class Video {
 	
 	String title, category, lendName;
-	boolean lend;
+	String lend;
 	Date lendDate = new Date();
 	int num = 0;
+	int lend_num = 0;
 	
 	public void input() {
 		Scanner sc = new Scanner(System.in);
@@ -20,14 +21,19 @@ public class Video {
 		System.out.print("장르를 입력하세요 : ");
 		category = sc.next();
 		
-		System.out.print("대여여부을 입력하세요(true or false) : ");
-		lend = sc.nextBoolean();
+		while(lend_num != 1 && lend_num != 2) {
+		System.out.print("대여여부을 입력하세요(1 입력시 대여중, 2 입력시 대여가능) : ");
+		lend_num = sc.nextInt();
+			if(lend_num == 1) lend = "대여중";
+			else lend = "대여가능";
+		}
 		
-		
-		if(lend == true) {
+		if(lend == "대여중") {
 			System.out.print("대여자이름을 입력하세요 : ");
 			lendName = sc.next();
-		}	
+		}else {
+			lendName = "대여자없음";
+		}
 	}
 	
 		
@@ -66,7 +72,6 @@ public class Video {
 			System.out.println("비디오번호 : " + e.getKey() + ", 비디오 : " + e.getValue());
 		}
 	}
-
 
 	@Override
 	public String toString() {
