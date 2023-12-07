@@ -13,7 +13,6 @@ public class MainEntry {
 		Reader reader = new InputStreamReader(is);
 		BufferedReader br = new BufferedReader(reader);
 		
-		
 		while(true) {
 			System.out.println("2개의 정수와 1개의 연산자를 입력하세요 : ");
 		

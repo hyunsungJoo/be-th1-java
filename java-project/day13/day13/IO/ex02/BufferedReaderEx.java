@@ -25,5 +25,4 @@ public class BufferedReaderEx {
 //		System.out.println(str + str2);
 		System.out.println(str + str2);
 	}
-
 }
