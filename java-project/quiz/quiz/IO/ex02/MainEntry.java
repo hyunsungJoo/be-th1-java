@@ -1,55 +1,51 @@
 package quiz.IO.ex02;
 
-import java.io.RandomAccessFile;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.Scanner;
+import java.util.Vector;
 
-public class MainEntry {
-	public static void main(String[] args) throws Exception {
-		Scanner sc = new Scanner(System.in);
-	
-		BmiManager bm = new BmiManager();
-		List<Bmi> list = new ArrayList<>();
+public class MainEntry {  // view
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		int h_num = 1000;
+		Vector<BmiManager> b_list = new Vector<BmiManager>();     // vector 이용
+		BmiManager bm = null;
+		Scanner s = new Scanner(System.in);
+		OutputStream os = new FileOutputStream("BMI_LIST2.txt");  // file save
 		
-		RandomAccessFile raf = new RandomAccessFile("bmi.txt", "rw");
-		
-		while(true) {
-			System.out.print("번호를 입력하세요(1.추가, 2.삭제, 3.수정, 4.종료) :");
-			int num = sc.nextInt();
-			switch(num) {
-			case 1: bm.add(list); break;
-			case 2 : 
-				try{
-					bm.delete(list); break;
+		try {
+			while (true) {
+				System.out.println("=========[ M E N U ]==========");
+				System.out.println("[ 1 ] BMI 측정 및 정보추가");
+				System.out.println("[ 2 ] BMI 정보 삭제");
+				System.out.println("[ 3 ] BMI 정보 출력");
+				System.out.println("[ 4 ] BMI system exit ");
+				System.out.print("[ 선택 ] -> ");
+				int ch = s.nextInt();
+				
+				switch (ch) {
+				case 1:
+					bm = new BmiManager(b_list, h_num, os);
+					h_num++;
+					break;
+				case 2:
+					bm.delete();
+					break;
+				case 3:
+					bm.output();
+					break;
+				case 4:
+					System.exit(0);
+					break;
+				default:
+					continue;
 				}
-				catch(Exception e) {
-					System.out.println("내용이 존재하지 않습니다.");
-				}
-			case 3 :
-				try {
-				bm.edit(list); break;
-				}
-				catch(Exception e) {
-					System.out.println("내용이 존재하지 않습니다.");
-				}
-			case 4 : break;
 			}
-			System.out.println();
-			for (int i = 0; i < list.size(); i++) {
-				System.out.println(list.get(i)); 
-			}
-			System.out.println();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		
-		for (int i = 0; i <= list.size(); i++) {
-			raf.seek(i * 200); // 예외발생, 원하는 위치지정
-			raf.write();
-//			raf.writeInt(i);
-		}
-		
-		System.out.println("string print success!");
-		raf.close();
-		
 	}
 }
