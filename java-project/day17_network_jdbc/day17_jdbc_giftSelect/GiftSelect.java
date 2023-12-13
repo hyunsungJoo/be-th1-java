@@ -15,7 +15,6 @@ public class GiftSelect { // select
 
 		// 2. Connection & Open
 		// driver:IP:portNumber/DBName
-
 		Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/sampledb","root","maria");
 
 		// 3. 사용 (DML 명령어)
@@ -31,9 +30,13 @@ public class GiftSelect { // select
 			
 			System.out.println(gno + "\t" + gname + "\t" + g_s + "\t" + g_e);
 		}
+		
+		conn.commit();
 		// 4. 닫기 ( 자원 반환)
 		rs.close();
 		stmt.close();
-		conn.close();
+//		conn.close();
 	}
 }
+
+// SQL Query 구문, HTML Tag는 자바에서 문자열 취급함.

@@ -14,17 +14,18 @@
 	<classpathentry kind="src" path="day07_arrayMethod"/>
 	<classpathentry kind="src" path="day07_staticMethod"/>
 	<classpathentry kind="src" path="day07_oop"/>
-	<classpathentry kind="src" path="day08"/>
-	<classpathentry kind="src" path="day09"/>
-	<classpathentry kind="src" path="day10"/>
+	<classpathentry kind="src" path="day08_constructor_inheritance"/>
+	<classpathentry kind="src" path="day09_abstract_interface_staticMember"/>
+	<classpathentry kind="src" path="day10_api"/>
 	<classpathentry kind="src" path="day11_collection"/>
 	<classpathentry kind="src" path="day12_collection"/>
 	<classpathentry kind="src" path="day12_util"/>
-	<classpathentry kind="src" path="day13"/>
-	<classpathentry kind="src" path="day14"/>
-	<classpathentry kind="src" path="day15"/>
-	<classpathentry kind="src" path="day16"/>
-	<classpathentry kind="src" path="day17"/>
+	<classpathentry kind="src" path="day13_io_generic_text"/>
+	<classpathentry kind="src" path="day14_io"/>
+	<classpathentry kind="src" path="day15_innerclass_thread_syncronized"/>
+	<classpathentry kind="src" path="day16_lambda_network"/>
+	<classpathentry kind="src" path="day17_network_jdbc"/>
+	<classpathentry kind="src" path="day18_jdbc"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
 		<attributes>
 			<attribute name="module" value="true"/>
